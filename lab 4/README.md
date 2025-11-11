@@ -5,7 +5,7 @@
 ### Задание A
 
 
-
+<lab 4/image/tarea_A_result.png>
 ```
 import csv
 from pathlib import Path
@@ -84,11 +84,11 @@ if __name__ == "__main__":
 
 ```
 
-
+<lab 4/image/tarea_A.png>
 
 ### Задание B
 
-
+<lab 4/image/tarea_B.png>
 
 ```
 import sys
@@ -140,3 +140,4 @@ def main():
     for word, count in top5:
         print(f"{word}:{count}")
 ```
+<lab 4/image/tarea_B.rresult.png>

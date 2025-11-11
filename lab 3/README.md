@@ -4,7 +4,7 @@
 
 ### Задание A
 
-
+<lab 3/images/Tarea_A.png>
 
 ```
 import re
@@ -49,11 +49,11 @@ print("count_freq:", freq)
 print("top_n:", top_n(freq, n=2))
 ```
 
-
+<lab 3/images/Tarea_A.result.png>
 
 ### Задание B
 
-
+<lab 3/images/Tarea_B.png>
 
 ```
 import sys
@@ -105,4 +105,4 @@ def main():
     for word, count in top5:
         print(f"{word}:{count}")
 ```
-
+<lab 3/images/Tarea_B.result.png>

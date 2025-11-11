@@ -4,7 +4,7 @@
 
 ### Задание A
 
-
+<lab 5/image/Tarea_A.png>
 
 ```
 import json
@@ -89,11 +89,12 @@ if __name__ == "__main__":
         csv_to_json("data/samples/people.csv", "data/out/people_from_csv.json")
     except Exception as e:
         print("Error en csv_to_json:", e)
-
+        
+<lab 5/image/Tarea_A.result.png>
 ### Задание B
 
 
-
+<lab 5/image/Tarea_B.png>
 ```
 import csv
 from openpyxl import Workbook

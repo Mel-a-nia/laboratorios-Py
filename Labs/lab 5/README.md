@@ -4,7 +4,8 @@
 
 ### Задание A
 
-<lab 5/image/Tarea_A.png>
+<img width="1880" height="3446" alt="Tarea_A" src="https://github.com/user-attachments/assets/342e99f1-473e-4621-a251-7196d1b08b29" />
+
 
 ```
 import json
@@ -163,3 +164,5 @@ if __name__ == "__main__":
         print("Ocurrió un error:", e)
 
 ```
+<img width="1046" height="131" alt="Tarea_A result" src="https://github.com/user-attachments/assets/39c22804-c4d8-4a32-beea-724fa733c960" />
+

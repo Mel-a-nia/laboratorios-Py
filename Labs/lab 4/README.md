@@ -141,3 +141,6 @@ def main():
         print(f"{word}:{count}")
 ```
 <lab 4/image/tarea_B.rresult.png>
+gfd
+fd
+vgfgfdf

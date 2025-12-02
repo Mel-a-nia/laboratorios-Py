@@ -165,6 +165,8 @@ if __name__ == "__main__":
         print("Ocurrió un error:", e)
 
 ```
+
+
 <img width="533" height="470" alt="Tarea_B result" src="https://github.com/user-attachments/assets/00d74bb3-7398-4b50-aed7-3c8305bd8484" />
 
 

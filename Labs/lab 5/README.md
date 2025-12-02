@@ -167,5 +167,9 @@ if __name__ == "__main__":
 ```
 
 
+<img width="533" height="470" alt="Tarea_B result" src="https://github.com/user-attachments/assets/3fa8b510-01ee-4eeb-bef0-52a8addbd6ae" />
+
+
+
 
 

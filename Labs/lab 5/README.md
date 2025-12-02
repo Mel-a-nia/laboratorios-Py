@@ -90,13 +90,14 @@ if __name__ == "__main__":
         csv_to_json("data/samples/people.csv", "data/out/people_from_csv.json")
     except Exception as e:
         print("Error en csv_to_json:", e)
+```
         
-<lab 5/image/Tarea_A.result.png>
+<img width="1046" height="131" alt="Tarea_A result" src="https://github.com/user-attachments/assets/068bfbf1-fe08-479d-8d5c-33be4041f138" />
+
 ### Задание B
 
-
-<lab 5/image/Tarea_B.png>
-```
+<img width="1664" height="2762" alt="Tarea_B" src="https://github.com/user-attachments/assets/57edc4da-ca2e-423e-8196-ad0e85ae8fa3" />
+ ```
 import csv
 from openpyxl import Workbook
 from pathlib import Path
@@ -164,5 +165,6 @@ if __name__ == "__main__":
         print("Ocurrió un error:", e)
 
 ```
-<img width="1046" height="131" alt="Tarea_A result" src="https://github.com/user-attachments/assets/39c22804-c4d8-4a32-beea-724fa733c960" />
+<img width="533" height="470" alt="Tarea_B result" src="https://github.com/user-attachments/assets/00d74bb3-7398-4b50-aed7-3c8305bd8484" />
+
 

@@ -14,7 +14,7 @@ def count_words(text):
 def top_words(words_dict, n=5):
     return sorted(words_dict.items(), key=lambda x: x[1], reverse=True)[:n]
 def main():
-    parser = argparse.ArgumentParser(description="Текстовые инструменты-lab6")
+    parser = argparse.ArgumentParser(description="Текстовые инструменты-lab06")
     sub = parser.add_subparsers(dest="cmd")
     p_cat = sub.add_parser("cat", help="Отобразить файл построчно")
     p_cat.add_argument("--input", required=True)

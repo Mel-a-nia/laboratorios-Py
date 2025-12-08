@@ -35,7 +35,7 @@ def csv_to_xlsx(csv_path, xlsx_path):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Преобразователи данных-lab6")
+    parser = argparse.ArgumentParser(description="Преобразователи данных-lab06")
     sub = parser.add_subparsers(dest="cmd")
 
     p1 = sub.add_parser("json2csv", help="Конвертировать JSON в CSV")

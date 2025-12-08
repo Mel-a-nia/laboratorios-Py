@@ -8,7 +8,7 @@ def flatten(mat:list[list | tuple])-> list:
     result=[]
     for row in mat:
         if not isinstance(row, (list, tuple)):
-            raise TypeError("строка не является ни списком, ни кортежем")
+            raise TypeError("строка не является ни списком, ни кортежем") 
         result.extend(row)
     return result 
 print(min_max([3, -1, 5, 5, 0]))

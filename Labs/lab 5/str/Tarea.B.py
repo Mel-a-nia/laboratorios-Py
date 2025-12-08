@@ -60,6 +60,6 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
 
 if __name__ == "__main__":
     try:
-        csv_to_xlsx("data/samples/people.csv", "data/out/people.xlsx")
+        csv_to_xlsx("lab 5/str/people.csv", "people.xlsx")
     except Exception as e:
         print("Ocurrió un error:", e)

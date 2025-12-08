@@ -4,7 +4,8 @@
 
 ### Задание A
 
-<lab 3/images/Tarea_A.png>
+<img width="1496" height="1812" alt="Tarea_A" src="https://github.com/user-attachments/assets/b0336e6a-7dcc-4a6a-bd10-63e6f1e38dc0" />
+
 
 ```
 import re
@@ -49,11 +50,13 @@ print("count_freq:", freq)
 print("top_n:", top_n(freq, n=2))
 ```
 
-<lab 3/images/Tarea_A.result.png>
+<img width="480" height="161" alt="Tarea_A result" src="https://github.com/user-attachments/assets/3a958481-a98a-459a-9d4c-68ae7a3fde92" />
+
 
 ### Задание B
 
-<lab 3/images/Tarea_B.png>
+<img width="1496" height="2192" alt="Tarea_B" src="https://github.com/user-attachments/assets/a473ff4d-c313-4d8d-a9f5-1366422fa6fb" />
+
 
 ```
 import sys
@@ -105,4 +108,5 @@ def main():
     for word, count in top5:
         print(f"{word}:{count}")
 ```
-<lab 3/images/Tarea_B.result.png>
+<img width="442" height="181" alt="Tarea_B result" src="https://github.com/user-attachments/assets/443be98e-213a-43fe-bf3b-b016ca517e1a" />
+

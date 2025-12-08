@@ -5,7 +5,8 @@
 ### Задание A
 
 
-<lab 4/image/tarea_A_result.png>
+<img width="1926" height="3142" alt="tarea_A" src="https://github.com/user-attachments/assets/39449fec-65fb-48c6-9a12-3eb009cedd54" />
+
 ```
 import csv
 from pathlib import Path
@@ -84,11 +85,13 @@ if __name__ == "__main__":
 
 ```
 
-<lab 4/image/tarea_A.png>
+<img width="572" height="137" alt="tarea_A_result" src="https://github.com/user-attachments/assets/58863988-2165-42eb-9b45-f45baf28440d" />
+
 
 ### Задание B
 
-<lab 4/image/tarea_B.png>
+<img width="1480" height="2154" alt="tarea_B" src="https://github.com/user-attachments/assets/48ccf622-41d8-4153-bf08-3ad7d23fab6f" />
+
 
 ```
 import sys
@@ -140,7 +143,4 @@ def main():
     for word, count in top5:
         print(f"{word}:{count}")
 ```
-<lab 4/image/tarea_B.rresult.png>
-gfd
-fd
-vgfgfdf
+<img width="526" height="65" alt="tarea_B rresult" src="https://github.com/user-attachments/assets/dea2b56f-7b13-4674-a837-e2c185ba84ca" />

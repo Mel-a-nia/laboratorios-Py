@@ -3,7 +3,10 @@
 ## Лабораторная работа 6
 
 ### Задание cli_text
+
 <img width="1542" height="3446" alt="cli_convert" src="https://github.com/user-attachments/assets/fd12fecd-4097-4146-b007-25e1e91fc7f4" />
+
+
 ```
 import argparse
 from pathlib import Path
@@ -90,6 +93,7 @@ if __name__ == "__main__":
 
 ```
 
+
 <img width="605" height="336" alt="cli_convert --help" src="https://github.com/user-attachments/assets/3881eda4-82db-4e0d-8788-ba6e9457a253" />
 
 <img width="548" height="234" alt="cli_convert json2cvs --help" src="https://github.com/user-attachments/assets/3ef4a5b7-9f92-4a9a-97f5-1580a279e825" />
@@ -103,6 +107,8 @@ if __name__ == "__main__":
 <img width="635" height="176" alt="cli_convert csv2xlsx --in" src="https://github.com/user-attachments/assets/0b8ffa64-a872-4fc7-b111-db6cbab7ca5d" />
 
 <img width="1236" height="662" alt="cli_convert csv2json --in" src="https://github.com/user-attachments/assets/cb439c70-6cd4-4d1c-8d6f-20399bbc756e" />
+
+
 
 ### Задание cli_text
 

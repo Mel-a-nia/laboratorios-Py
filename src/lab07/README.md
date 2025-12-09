@@ -55,7 +55,8 @@ def top_n(freq: dict[str, int], n: int) -> list[tuple[str, int]]:
 
 ### Задание test_text
 
-<img width="1664" height="2762" alt="Tarea_B" src="https://github.com/user-attachments/assets/57edc4da-ca2e-423e-8196-ad0e85ae8fa3" />
+<img width="1280" height="1394" alt="test_text" src="https://github.com/user-attachments/assets/e4570f02-f631-4292-b74c-df266f76b42f" />
+
 
 
  ```

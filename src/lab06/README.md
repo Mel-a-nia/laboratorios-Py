@@ -90,16 +90,25 @@ if __name__ == "__main__":
 
 ```
 #### Result
+
 <img width="605" height="336" alt="cli_convert --help" src="https://github.com/user-attachments/assets/3881eda4-82db-4e0d-8788-ba6e9457a253" />
+
 <img width="548" height="234" alt="cli_convert json2cvs --help" src="https://github.com/user-attachments/assets/3ef4a5b7-9f92-4a9a-97f5-1580a279e825" />
+
 <img width="651" height="243" alt="cli_convert csv2xlsx --help" src="https://github.com/user-attachments/assets/8d183034-bac3-459e-8aaa-552ea4342162" />
+
 <img width="569" height="220" alt="cli_convert csv2json --help" src="https://github.com/user-attachments/assets/81e1e168-facc-4301-bdde-c756096176ac" />
+
 <img width="1254" height="663" alt="cli_convert json2csv --in" src="https://github.com/user-attachments/assets/b73e294d-aff6-4aaf-893a-78eafb36aeb3" />
+
 <img width="635" height="176" alt="cli_convert csv2xlsx --in" src="https://github.com/user-attachments/assets/0b8ffa64-a872-4fc7-b111-db6cbab7ca5d" />
+
 <img width="1236" height="662" alt="cli_convert csv2json --in" src="https://github.com/user-attachments/assets/cb439c70-6cd4-4d1c-8d6f-20399bbc756e" />
 
 ### Задание cli_text
+
 <img width="1526" height="2724" alt="cli_text" src="https://github.com/user-attachments/assets/5cbc2fb8-97d6-4da1-898b-b4b0a0c81d30" />
+
  ```
 import argparse
 from pathlib import Path
@@ -169,16 +178,27 @@ if __name__ == "__main__":
 ```
 
 #### Result 
+
 <img width="531" height="370" alt="cli_text py --help" src="https://github.com/user-attachments/assets/a6623800-c53c-498d-8b1f-b9ed879b5918" />
+
 <img width="1271" height="645" alt="cli_text --help" src="https://github.com/user-attachments/assets/e3be8215-982d-40d5-b68b-da71f25fb0bb" />
+
 <img width="578" height="231" alt="cli_text cat --help" src="https://github.com/user-attachments/assets/698c4c5a-044c-4dbd-8e99-eb7620653820" />
+
 <img width="573" height="225" alt="cli_text stast --help" src="https://github.com/user-attachments/assets/c4e50a8f-02e7-4e09-9354-ec3f89e3fe7b" />
+
 <img width="817" height="761" alt="cli_text cat --input" src="https://github.com/user-attachments/assets/5821714c-4a6c-4176-bf60-8339f4a4c768" />
+
 <img width="499" height="153" alt="cli_text cat--input data check --top 5" src="https://github.com/user-attachments/assets/be0f7283-a28c-4bc3-9386-a501e09e0a9c" />
+
 <img width="537" height="177" alt="cli_text cat--input data check" src="https://github.com/user-attachments/assets/6f75fcf7-ac44-4fde-9c89-5d85e2513f51" />
+
 <img width="652" height="186" alt="cli_text cat--input data check-n" src="https://github.com/user-attachments/assets/6880ee20-5ce3-4804-8e0b-fb21b233a3b0" />
+
 <img width="557" height="297" alt="cli_text cat--input data samples people -n" src="https://github.com/user-attachments/assets/d725db2b-9784-4ee2-bd2c-eba0639784c0" />
+
 <img width="1296" height="450" alt="cli_text stats --input data check --top5" src="https://github.com/user-attachments/assets/c7434121-af88-4e6f-98a3-396603f7a9f4" />
+
 <img width="560" height="232" alt="cli_text stats --input sata samples people --top5" src="https://github.com/user-attachments/assets/ea160913-0103-4535-97c8-cdc6682c66bb" />
 
 

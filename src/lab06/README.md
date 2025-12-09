@@ -89,7 +89,7 @@ if __name__ == "__main__":
     main()
 
 ```
-#### Result
+### Result
 
 <img width="605" height="336" alt="cli_convert --help" src="https://github.com/user-attachments/assets/3881eda4-82db-4e0d-8788-ba6e9457a253" />
 
@@ -177,7 +177,7 @@ if __name__ == "__main__":
 
 ```
 
-#### Result 
+### Result 
 
 <img width="531" height="370" alt="cli_text py --help" src="https://github.com/user-attachments/assets/a6623800-c53c-498d-8b1f-b9ed879b5918" />
 

@@ -1,5 +1,7 @@
 import sys
 import re
+
+
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
     result = text
     if casefold:
@@ -13,20 +15,28 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
         result = result.replace("  ", " ")
     result = result.strip()
     return result
+
+
 def tokenize(text: str) -> list[str]:
     pattern = r"\w+(?:-\w+)*"
     tokens = re.findall(pattern, text)
     return tokens
+
+
 def count_freq(tokens: list[str]) -> dict[str, int]:
     freq = {}
     for word in tokens:
         freq[word] = freq.get(word, 0) + 1
     return freq
+
+
 def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
     items = list(freq.items())
     sorted_items = sorted(items, key=lambda x: (-x[1], x[0]))
     top_n_items = sorted_items[:n]
     return top_n_items
+
+
 def main():
     if len(sys.argv) > 1:
         text_input = " ".join(sys.argv[1:])
@@ -45,6 +55,7 @@ def main():
     print("Топ-5:")
     for word, count in top_n(freq, n=5):
         print(f"{word}:{count}")
+
+
 if __name__ == "__main__":
     main()
-

@@ -1,6 +1,7 @@
-
 import sys
-from lab import normalize, tokenize, count_freq, top_n  
+from lab import normalize, tokenize, count_freq, top_n
+
+
 def main():
     text_input = sys.stdin.read()
     norm_text = normalize(text_input)

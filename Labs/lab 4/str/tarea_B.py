@@ -2,6 +2,7 @@ import sys
 import csv
 from pathlib import Path
 from collections import Counter
+
 in_file = "data/input.txt"
 out_file = "data/report.csv"
 encoding = "utf-8"
@@ -21,7 +22,7 @@ except FileNotFoundError:
 except UnicodeDecodeError:
     print("Ошибка кодировки. Попробуйте указать параметр --encoding cp1251")
     sys.exit(1)
-text = text.casefold() 
+text = text.casefold()
 text = text.replace("ё", "е")
 text = text.replace("\t", " ")
 text = text.replace("\n", " ")
@@ -29,11 +30,12 @@ text = text.replace("\r", " ")
 while "  " in text:
     text = text.replace("  ", " ")
 import re
+
 tokens = re.findall(r"\w+(?:-\w+)*", text)
 freq = Counter(tokens)
 sorted_words = sorted(freq.items(), key=lambda x: (-x[1], x[0]))
 p = Path(out_file)
-p.parent.mkdir(parents=True, exist_ok=True) 
+p.parent.mkdir(parents=True, exist_ok=True)
 with open(out_file, "w", encoding="utf-8", newline="") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(["word", "count"])

@@ -1,5 +1,7 @@
 import csv
 from pathlib import Path
+
+
 def read_text(path: str | Path, encoding: str = "utf-8") -> str:
     """
     Функция открывает текстовый файл и возвращает содержимое как одну строку.
@@ -21,6 +23,8 @@ def read_text(path: str | Path, encoding: str = "utf-8") -> str:
                 return contenido
     except UnicodeDecodeError:
         raise UnicodeDecodeError("Ошибка декодирования! Попробуйте другую кодировку.")
+
+
 def ensure_parent_dir(path: str | Path) -> None:
     """
     Создает родительские директории, если их нет.
@@ -31,7 +35,11 @@ def ensure_parent_dir(path: str | Path) -> None:
     if not folder.exists():
         print(f"Создаю директорию: {folder}")
         folder.mkdir(parents=True, exist_ok=True)
-def write_csv(rows: list[list | tuple], path: str | Path, header: tuple[str, ...] | None = None) -> None:
+
+
+def write_csv(
+    rows: list[list | tuple], path: str | Path, header: tuple[str, ...] | None = None
+) -> None:
     """
     Создает CSV-файл с разделителем ','.
     Если передан header, записывает его первой строкой.
@@ -59,16 +67,18 @@ def write_csv(rows: list[list | tuple], path: str | Path, header: tuple[str, ...
             print(f"Файл '{path}' успешно записан!")
     except Exception as e:
         print("Ошибка при записи CSV:", e)
+
+
 if __name__ == "__main__":
     print("=== Тест функции read_text ===")
     try:
-        txt = read_text("data/input.txt") 
+        txt = read_text("data/input.txt")
         print("Содержимое файла:")
         print(txt)
     except Exception as e:
         print("Ошибка при чтении файла:", e)
     print("\n=== Тест функции write_csv ===")
     try:
-        write_csv([("word","count"),("test",3)], "data/check.csv")
+        write_csv([("word", "count"), ("test", 3)], "data/check.csv")
     except Exception as e:
         print("Ошибка при записи CSV:", e)

@@ -3,10 +3,11 @@
 ## Лабораторная работа 9
 
 ### Задание A
-
-<img width="1880" height="3446" alt="Tarea_A" src="https://github.com/user-attachments/assets/342e99f1-473e-4621-a251-7196d1b08b29" />
  
  #### group
+
+ <img width="1526" height="2610" alt="Group" src="https://github.com/user-attachments/assets/d596714e-62ba-45bc-be40-fc8e01a45a2c" />
+
 
 ```
 import csv
@@ -72,7 +73,11 @@ class Group:
 
 ```
 
+
 #### Students
+
+<img width="772" height="444" alt="students" src="https://github.com/user-attachments/assets/42136b24-7a2c-47ae-a762-4215a29cf6f7" />
+
 
 ```
 fio,birthdate,group,gpa
@@ -81,6 +86,19 @@ Juan Perez,2002-05-10,SE-03,4.9
 
 ```
 
-        
-<img width="1046" height="131" alt="Tarea_A result" src="https://github.com/user-attachments/assets/068bfbf1-fe08-479d-8d5c-33be4041f138" />
+  #### Result 
 
+  
+  <img width="1201" height="118" alt="list()" src="https://github.com/user-attachments/assets/0d195f09-6d9e-4de5-978a-a54900f1a948" />
+
+
+<img width="707" height="67" alt="find()" src="https://github.com/user-attachments/assets/fcf57416-e0b9-4439-8063-46140d438904" />
+
+
+<img width="1192" height="290" alt="add" src="https://github.com/user-attachments/assets/f8f4b054-20bd-4cb0-8118-404e886db6f7" />
+
+<img width="1173" height="157" alt="remove" src="https://github.com/user-attachments/assets/5b3f541e-0306-429b-9cd1-dd1a034923da" />
+
+<img width="845" height="183" alt="update" src="https://github.com/user-attachments/assets/d0f38924-83d3-4f65-8260-574c1705f9b5" />
+
+  

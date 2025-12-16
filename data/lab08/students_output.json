@@ -1,0 +1,14 @@
+[
+  {
+    "fio": "Juan Perez",
+    "birthdate": "2002-05-10",
+    "group": "SE-01",
+    "gpa": 4.3
+  },
+  {
+    "fio": "Maria Lopez",
+    "birthdate": "2001-08-21",
+    "group": "SE-02",
+    "gpa": 4.8
+  }
+]

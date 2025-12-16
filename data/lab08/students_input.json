@@ -1,0 +1,14 @@
+[
+  {
+    "fio": "Ana Lopez",
+    "birthdate": "2001-03-15",
+    "group": "SE-02",
+    "gpa": 4.8
+  },
+  {
+    "fio": "Carlos Ruiz",
+    "birthdate": "2000-11-02",
+    "group": "SE-01",
+    "gpa": 3.9
+  }
+]

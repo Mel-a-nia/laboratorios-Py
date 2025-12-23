@@ -4,6 +4,7 @@
 
 ### Задание A (structures)
 
+<img width="1172" height="2838" alt="structures" src="https://github.com/user-attachments/assets/ac76d368-9823-4e21-bc62-996339977c8c" />
 
 
 ```
@@ -86,8 +87,16 @@ if __name__ == "__main__":
 
 
 
+<img width="1112" height="255" alt="structures_result" src="https://github.com/user-attachments/assets/9e4187ef-fc56-41a8-8379-c5bf87bfefa8" />
+
+
+
 
 ### Задание B (linked_list)
+
+
+
+<img width="1280" height="3750" alt="Linked_list" src="https://github.com/user-attachments/assets/665eddb3-1c42-4b62-bddb-93af07002547" />
 
 
 
@@ -185,5 +194,6 @@ if __name__ == "__main__":
         print(x)
 ```
 
+<img width="851" height="241" alt="Linked_list_result" src="https://github.com/user-attachments/assets/d18d0fbf-c8c7-480f-bb4e-31b0ede1fc9f" />
 
 

@@ -8,80 +8,72 @@
 
 
 ```
-import csv
-from pathlib import Path
-def read_text(path: str | Path, encoding: str = "utf-8") -> str:
-    """
-    Функция открывает текстовый файл и возвращает содержимое как одну строку.
-    По умолчанию используется кодировка UTF-8.
-    Если нужно, пользователь может указать другую кодировку, например: encoding="cp1251".
+from collections import deque
+from typing import Any
+class Stack:
 
-    Пример:
-        text = read_text("data/input.txt")
-    """
-    p = Path(path)
-    if not p.exists():
-        raise FileNotFoundError(f"Файл не найден: {path}")
-    try:
-        with p.open("r", encoding=encoding) as f:
-            contenido = f.read()
-            if contenido == "":
-                return ""
-            else:
-                return contenido
-    except UnicodeDecodeError:
-        raise UnicodeDecodeError("Ошибка декодирования! Попробуйте другую кодировку.")
-def ensure_parent_dir(path: str | Path) -> None:
-    """
-    Создает родительские директории, если их нет.
-    Это удобно перед записью CSV.
-    """
-    p = Path(path)
-    folder = p.parent
-    if not folder.exists():
-        print(f"Создаю директорию: {folder}")
-        folder.mkdir(parents=True, exist_ok=True)
-def write_csv(rows: list[list | tuple], path: str | Path, header: tuple[str, ...] | None = None) -> None:
-    """
-    Создает CSV-файл с разделителем ','.
-    Если передан header, записывает его первой строкой.
-    Проверяет, что все строки одинаковой длины (иначе ValueError).
+    def __init__(self):
+        self._data: list[Any] = []
 
-    Пример:
-        write_csv([("word","count"),("test",3)], "data/check.csv")
-    """
-    ensure_parent_dir(path)
-    p = Path(path)
-    if rows is None:
-        rows = []
-    if len(rows) > 1:
-        primera = len(rows[0])
-        for r in rows:
-            if len(r) != primera:
-                raise ValueError("Не все строки одинаковой длины!")
-    try:
-        with p.open("w", encoding="utf-8", newline="") as f:
-            writer = csv.writer(f)
-            if header is not None:
-                writer.writerow(header)
-            for fila in rows:
-                writer.writerow(fila)
-            print(f"Файл '{path}' успешно записан!")
-    except Exception as e:
-        print("Ошибка при записи CSV:", e)
+    def push(self, item: Any) -> None:
+        self._data.append(item)
+
+    def pop(self) -> Any:
+        if self.is_empty():
+            raise IndexError("pop from empty stack")
+        return self._data.pop()
+
+    def peek(self) -> Any | None:
+        if self.is_empty():
+            return None
+        return self._data[-1]
+
+    def is_empty(self) -> bool:
+        return len(self._data) == 0
+
+    def __len__(self) -> int:
+        return len(self._data)
+
+
+class Queue:
+    """Очередь (FIFO) на базе collections.deque"""
+
+    def __init__(self):
+        self._data: deque[Any] = deque()
+    def enqueue(self, item: Any) -> None:
+        self._data.append(item)
+    def dequeue(self) -> Any:
+        if self.is_empty():
+            raise IndexError("dequeue from empty queue")
+        return self._data.popleft()
+    def peek(self) -> Any | None:
+        if self.is_empty():
+            return None
+        return self._data[0]
+    def is_empty(self) -> bool:
+        return len(self._data) == 0
+    def __len__(self) -> int:
+        return len(self._data)
 if __name__ == "__main__":
-    print("=== Тест функции read_text ===")
-    try:
-        txt = read_text("data/input.txt") 
-        print("Содержимое файла:")
-        print(txt)
-    except Exception as e:
-        print("Ошибка при чтении файла:", e)
-    print("\n=== Тест функции write_csv ===")
-    try:
-        write_csv([("word","count"),("test",3)], "data/check.csv")
-    except Exception as e:
-        print("Ошибка при записи CSV:", e)
+    s = Stack()
+    print("Stack vacío:", s.is_empty())
+    s.push(10)
+    s.push(20)
+    s.push(30)
+    print("Peek:", s.peek())
+    print("Pop:", s.pop())
+    print("Tamaño:", len(s))
+    print("Vacío:", s.is_empty())
+    print("----")
+    q = Queue()
+    q.enqueue("a")
+    q.enqueue("b")
+    q.enqueue("c")
+    print("Peek:", q.peek())
+    print("Dequeue:", q.dequeue())
+    print("Tamaño:", len(q))
+    print("Vacía:", q.is_empty())
+
 
 ```
 

@@ -3,10 +3,11 @@
 ## Лабораторная работа 8
 
 ### Задание A
-
-<img width="1880" height="3446" alt="Tarea_A" src="https://github.com/user-attachments/assets/342e99f1-473e-4621-a251-7196d1b08b29" />
  
  #### Models
+
+<img width="1388" height="1964" alt="models" src="https://github.com/user-attachments/assets/42421532-a8be-4f8f-a60a-8100925b7fb9" />
+ 
 
 ```
 from dataclasses import dataclass
@@ -57,6 +58,8 @@ class Student:
 
 #### Demo
 
+<img width="1356" height="900" alt="demo" src="https://github.com/user-attachments/assets/47bfd8d4-276b-46e3-85ae-0ccde1a16475" />
+
 ```
 from src.lab08.models import Student
 from src.lab08.serialize import students_to_json, students_from_json
@@ -76,14 +79,22 @@ for s in loaded:
 
 ```
 
+<img width="743" height="217" alt="Demo_result" src="https://github.com/user-attachments/assets/d040bbd0-a697-4bf5-8703-0ab4515e6130" />
         
-<img width="1046" height="131" alt="Tarea_A result" src="https://github.com/user-attachments/assets/068bfbf1-fe08-479d-8d5c-33be4041f138" />
+#### Result 
+
+
+<img width="825" height="283" alt="age_dict" src="https://github.com/user-attachments/assets/506f9c8f-95a2-4edf-8d0b-b68d73a3d3f0" />
+
+
+<img width="731" height="257" alt="from_dict" src="https://github.com/user-attachments/assets/cb555a10-15fe-48ee-9dc8-18c819752a44" />
+
 
 ### Задание B
 
 #### Serialize
 
-<img width="1664" height="2762" alt="Tarea_B" src="https://github.com/user-attachments/assets/57edc4da-ca2e-423e-8196-ad0e85ae8fa3" />
+<img width="1172" height="900" alt="serialize" src="https://github.com/user-attachments/assets/6d0c703b-34fb-4520-a789-eb50c54a2fd0" />
 
  ```
 import json
@@ -105,6 +116,9 @@ def students_from_json(path):
 ```
 #### JSON 
 
+<img width="772" height="862" alt="studento_input" src="https://github.com/user-attachments/assets/3ff4b950-ec68-45b8-bee0-b413f3019655" />
+
+
 ```
 [
   {
@@ -121,3 +135,4 @@ def students_from_json(path):
   }
 ]
 ```
+<img width="1719" height="1017" alt="Result-student" src="https://github.com/user-attachments/assets/002bc799-d258-4e83-a057-fec05abadd20" />
